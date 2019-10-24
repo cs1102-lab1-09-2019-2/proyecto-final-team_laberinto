@@ -7,11 +7,11 @@
 Integrantes - (Usuarios Github:):
 --
 
-1.- <b>nombre_completo1</b><br>
+1.- <b>nombre_completo1: Gabriel Espinoza</b><br>
     <i>usuario_github1</i>
 
-2.- <b>nombre_completo2</b><br>
-    <i>usuario_github2</i>
+2.- <b>nombre_completo2: Hillary Camila Holguín Gamarra</b><br>
+    <i>usuario_github2: hillary-github</i>
 
 3.- <b>nombre_completo3: Alexandra Amy Zevallos Carhuamaca</b><br>
     <i>usuario_github3: alexandra-zevallos</i>
