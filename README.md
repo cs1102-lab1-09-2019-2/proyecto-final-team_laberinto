@@ -8,7 +8,7 @@ Integrantes - (Usuarios Github:):
 --
 
 1.- <b>nombre_completo1: Gabriel Alexander Espinoza Gervassi</b><br>
-    <i>usuario_github1</i>
+    <i>usuario_github1: GABO3Mz </i>
 
 2.- <b>nombre_completo2: Hillary Camila Holguín Gamarra</b><br>
     <i>usuario_github2: hillary-github</i>
