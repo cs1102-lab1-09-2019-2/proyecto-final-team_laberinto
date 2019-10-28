@@ -1,5 +1,5 @@
 
-#include "laberinto.cpp"
+#include "laberinto.h"
 
 void CLaberinto::crearLaberinto(){
   Matriz[10][10] = {{1,1,1,1,1,1,1,1,1,1},
