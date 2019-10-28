@@ -1,6 +1,4 @@
-//
-// Created by Gabriel Alexsander on 27/10/2019.
-//
+
 #include "laberinto.cpp"
 
 void CLaberinto::crearLaberinto(){
