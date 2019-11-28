@@ -8,7 +8,8 @@ int main(){
     TipoEntero SeleccionadorMapa = 0;
     TipoEntero TamFila = 0;
     Presentacion(SeleccionadorMapa, TamFila);
-    const TipoCaracter *AlmacenMapas10 = new TipoCaracter[5];
+/*
+    TipoCaracter * const AlmacenMapas10 = new TipoCaracter*[5];
 
     AlmacenMapas10[0]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#1.txt";
     AlmacenMapas10[1]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#2.txt";
@@ -16,7 +17,7 @@ int main(){
     AlmacenMapas10[3]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#4.txt";
     AlmacenMapas10[4]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#5.txt";
 
-    const TipoCaracter *AlmacenMapas15 = new TipoCaracter[5];
+    TipoCaracter * const AlmacenMapas15 = new TipoCaracter*[5];
 
     AlmacenMapas15[0]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#6.txt";
     AlmacenMapas15[1]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#7.txt";
@@ -24,31 +25,32 @@ int main(){
     AlmacenMapas15[3]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#9.txt";
     AlmacenMapas15[4]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#10.txt";
 
-    const TipoCaracter *AlmacenMapas20 = new TipoCaracter[5];
+    TipoCaracter * const AlmacenMapas20 = new TipoCaracter*[5];
 
     AlmacenMapas20[0]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#11.txt";
     AlmacenMapas20[1]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#12.txt";
     AlmacenMapas20[2]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#13.txt";
     AlmacenMapas20[3]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#14.txt";
-    AlmacenMapas20[4]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#15.txt";
+    AlmacenMapas20[4]="C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#15.txt";*/
 
-    const TipoCaracter MapaSeleccionado;
-
+    const TipoCaracter *MapaSeleccionado = "C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#4.txt";
+    SeleccionadorMapa -= 1;
     if (TamFila <= 10){
-        MapaSeleccionado = AlmacenMapas10[SeleccionadorMapa-1];
+        MapaSeleccionado = "C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#4.txt";
     } else if (TamFila <= 15){
-        MapaSeleccionado = AlmacenMapas15[SeleccionadorMapa-1];
+        MapaSeleccionado = "C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#4.txt";
     } else{
-        MapaSeleccionado = AlmacenMapas20[SeleccionadorMapa-1];
+        MapaSeleccionado = "C:\\Users\\Gabriel Alexsander\\Desktop\\MapasPOO\\MAPA#4.txt";
     }
     TipoEntero Filas = TamFila, Columnas = TamFila;
     Mapa MapaDeJuego(MapaSeleccionado, Filas, Columnas);
     TipoEntero Xo, Yo, Xf, Yf;
     TipoEntero **Mapa = MapaDeJuego.LeerArchivo();
-    DarPosiciones(Xo, Yo, Xf, Yf, Filas, Columnas, Mapa);
+    ObtenerPosiciones(Xo, Yo, Xf, Yf, Filas, Columnas, Mapa);
     Carro Carro1("Rayo McQueen", Xo, Yo, Xf, Yf, Mapa, Filas, Columnas);
     Carro1.Camino1(Carro1.getXo(),Carro1.getYo(),Carro1.getXf(),Carro1.getYf());
-    ImprimirMatriz(Mapa);
+    cout<<Carro1.getPista();
+    ImprimirMatriz(Mapa, Filas);
 
 
 
